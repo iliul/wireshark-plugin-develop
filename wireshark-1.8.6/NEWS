@@ -1,0 +1,269 @@
+Wireshark 1.8.6 Release Notes
+
+   ------------------------------------------------------------------
+
+What is Wireshark?
+
+   Wireshark is the world's most popular network protocol analyzer.
+   It is used for troubleshooting, analysis, development and
+   education.
+
+What's New
+
+  Bug Fixes
+
+   The following vulnerabilities have been fixed.
+
+     o wnpa-sec-2013-10
+
+       The TCP dissector could crash. (Bug 8274)
+
+       Versions affected: 1.8.0 to 1.8.5.
+
+       CVE-2013-2475
+
+     o wnpa-sec-2013-11
+
+       The HART/IP dissectory could go into an infinite loop. (Bug
+       8360)
+
+       Versions affected: 1.8.0 to 1.8.5.
+
+       CVE-2013-2476
+
+     o wnpa-sec-2013-12
+
+       The CSN.1 dissector could crash. Discovered by Laurent Butti.
+       (Bug 8383)
+
+       Versions affected: 1.8.0 to 1.8.5.
+
+       CVE-2013-2477
+
+     o wnpa-sec-2013-13
+
+       The MS-MMS dissector could crash. Discovered by Laurent Butti.
+       (Bug 8382)
+
+       Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.
+
+       CVE-2013-2478
+
+     o wnpa-sec-2013-14
+
+       The MPLS Echo dissector could go into an infinite loop.
+       Discovered by Laurent Butti. (Bug 8039)
+
+       Versions affected: 1.8.0 to 1.8.5.
+
+       CVE-2013-2479
+
+     o wnpa-sec-2013-15
+
+       The RTPS and RTPS2 dissectors could crash. Discovered by
+       Alyssa Milburn. (Bug 8332)
+
+       Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.
+
+       CVE-2013-2480
+
+     o wnpa-sec-2013-16
+
+       The Mount dissector could crash. Discovered by Alyssa Milburn.
+       (Bug 8335)
+
+       Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.
+
+       CVE-2013-2481
+
+     o wnpa-sec-2013-17
+
+       The AMPQ dissector could go into an infinite loop. Discovered
+       by Moshe Kaplan. (Bug 8337)
+
+       Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.
+
+       CVE-2013-2482
+
+     o wnpa-sec-2013-18
+
+       The ACN dissector could attempt to divide by zero. Discovered
+       by Alyssa Milburn. (Bug 8340)
+
+       Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.
+
+       CVE-2013-2483
+
+     o wnpa-sec-2013-19
+
+       The CIMD dissector could crash. Discovered by Moshe Kaplan.
+       (Bug 8346)
+
+       Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.
+
+       CVE-2013-2484
+
+     o wnpa-sec-2013-20
+
+       The FCSP dissector could go into an infinite loop. Discovered
+       by Moshe Kaplan. (Bug 8359)
+
+       Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.
+
+       CVE-2013-2485
+
+     o wnpa-sec-2013-21
+
+       The RELOAD dissector could go into an infinite loop.
+       Discovered by Even Jensen. (Bug 8364)
+
+       Versions affected: 1.8.0 to 1.8.5.
+
+       CVE-2013-2486
+
+       CVE-2013-2487
+
+     o wnpa-sec-2013-22
+
+       The DTLS dissector could crash. Discovered by Laurent Butti.
+       (Bug 8380)
+
+       Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.
+
+       CVE-2013-2488
+
+   The following bugs have been fixed:
+
+     o Lua pinfo.cols.protocol not holding value in postdissector.
+       (Bug 6020)
+
+     o data combined via ssl_desegment_app_data not visible via
+       "Follow SSL Stream" only decrypted ssl data tabs. (Bug 6434)
+
+     o HTTP application/json-rpc should be decoded/shown as
+       application/json. (Bug 7939)
+
+     o Maximum value of 802.11-2012 Duration field should be 32767.
+       (Bug 8056)
+
+     o Voice RTP player crash if player is closed while playing. (Bug
+       8065)
+
+     o Display Filter Macros crash. (Bug 8073)
+
+     o RRC RadioBearerSetup message decoding issue. (Bug 8290)
+
+     o R-click filters add ! in front of field when choosing "apply
+       as filter>selected". (Bug 8297)
+
+     o BACnet - Loop Object - Setpoint-Reference property does not
+       decode correctly. (Bug 8306)
+
+     o WMM TSPEC Element Parsing is not done is wrong due to a wrong
+       switch case number. (Bug 8320)
+
+     o Incorrect RTP statistics (Lost Packets indication not ok).
+       (Bug 8321)
+
+     o Registering ieee802154 dissector for IEEE802.15.4 frames
+       inside Linux SLL frames. (Bug 8325)
+
+     o Version Field is skipped while parsing WMM_TSPEC causing wrong
+       dissecting (1 byte offset missing) of all fields in the TSPEC.
+       (Bug 8330)
+
+     o [BACnet] UCS-2 strings longer than 127 characters do not
+       decode correctly. (Bug 8331)
+
+     o Malformed IEEE80211 frame triggers DISSECTOR_ASSERT. (Bug
+       8345)
+
+     o Decoding of GSM MAP SMS Diagnostics. (Bug 8378)
+
+     o Incorrect packet length displayed for Flight Message Transfer
+       Protocol (FMTP). (Bug 8407)
+
+     o Netflow dissector flowDurationMicroseconds nanosecond
+       conversion wrong. (Bug 8410)
+
+     o BE (3) AC is wrongly named as "Video" in (qos_acs). (Bug 8432)
+
+  New and Updated Features
+
+   There are no new features in this release.
+
+  New Protocol Support
+
+   There are no new protocols in this release.
+
+  Updated Protocol Support
+
+   ACN, AMQP, ASN.1 PER, BACnet, CIMD, CSN.1, DOCSIS TLVs, DTLS,
+   FCSP, FMP/NOTIFY, FMTP, GSM MAP SMS, HART/IP, IEEE 802.11, IEEE
+   802.15.4, JSON, Linux SLL, LTE RRC, Mount, MPLS Echo, Netflow,
+   RELOAD, RSL, RTP, RTPS, RTPS2, SABP, SIP, SSL, TCP
+
+  New and Updated Capture File Support
+
+   .
+
+Getting Wireshark
+
+   Wireshark source code and installation packages are available from
+   http://www.wireshark.org/download.html.
+
+  Vendor-supplied Packages
+
+   Most Linux and Unix vendors supply their own Wireshark packages.
+   You can usually install or upgrade Wireshark using the package
+   management system specific to that platform. A list of third-party
+   packages can be found on the download page on the Wireshark web
+   site.
+
+File Locations
+
+   Wireshark and TShark look in several different locations for
+   preference files, plugins, SNMP MIBS, and RADIUS dictionaries.
+   These locations vary from platform to platform. You can use
+   About→Folders to find the default locations on your system.
+
+Known Problems
+
+   Dumpcap might not quit if Wireshark or TShark crashes. (Bug 1419)
+
+   The BER dissector might infinitely loop. (Bug 1516)
+
+   Capture filters aren't applied when capturing from named pipes.
+   (Bug 1814)
+
+   Filtering tshark captures with display filters (-R) no longer
+   works. (Bug 2234)
+
+   The 64-bit Windows installer does not support Kerberos decryption.
+   (Win64 development page)
+
+   Application crash when changing real-time option. (Bug 4035)
+
+   Hex pane display issue after startup. (Bug 4056)
+
+   Packet list rows are oversized. (Bug 4357)
+
+   Summary pane selected frame highlighting not maintained. (Bug
+   4445)
+
+   Wireshark and TShark will display incorrect delta times in some
+   cases. (Bug 4985)
+
+Getting Help
+
+   Community support is available on Wireshark's Q&A site and on the
+   wireshark-users mailing list. Subscription information and
+   archives for all of Wireshark's mailing lists can be found on the
+   web site.
+
+   Official Wireshark training and certification are available from
+   Wireshark University.
+
+Frequently Asked Questions
+
+   A complete FAQ is available on the Wireshark web site.

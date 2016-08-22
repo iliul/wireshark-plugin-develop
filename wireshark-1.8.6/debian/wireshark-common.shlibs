@@ -1,0 +1,3 @@
+libwireshark 2 wireshark-common
+libwiretap 2 wireshark-common
+libwsutil 2 wireshark-common

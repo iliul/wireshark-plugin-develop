@@ -1,0 +1,594 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+
+<!-- $Id: release-notes.xml 48138 2013-03-06 17:47:14Z gerald $ -->
+
+<!--
+DOCUMENT SECTION
+-Use this section to encode all document information
+-->
+
+<!--
+Wireshark Info
+-->
+<!ENTITY WiresharkCurrentVersion "1.8.6">
+
+]>
+
+<article>
+  <title>Wireshark &WiresharkCurrentVersion; Release Notes</title>
+
+  <section id="WhatIs"><title>What is Wireshark?</title>
+    <para>
+      Wireshark is the world's most popular network protocol analyzer.  It
+      is used for troubleshooting, analysis, development and education.
+    </para>
+  </section>
+
+  <section id="WhatsNew"><title>What's New</title>
+    <section id="BugFixes"><title>Bug Fixes</title>
+
+    <para>
+
+      The following vulnerabilities have been fixed.
+      <itemizedlist>
+
+        <listitem>
+          <para>
+            <ulink url="http://www.wireshark.org/security/wnpa-sec-2013-10.html">wnpa-sec-2013-10</ulink>
+          </para>
+          <para>
+	    The TCP dissector could crash.
+            <!-- Fixed in trunk: r42798 -->
+            <!-- Fixed in trunk-1.8: r43185 -->
+            (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8274">Bug
+            8274</ulink>)
+          </para>
+          <para>Versions affected: 1.8.0 to 1.8.5.</para>
+          <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2475">CVE-2013-2475</ulink>
+          </para>
+        </listitem>
+
+        <listitem>
+          <para>
+            <ulink url="http://www.wireshark.org/security/wnpa-sec-2013-11.html">wnpa-sec-2013-11</ulink>
+          </para>
+          <para>
+	    The HART/IP dissectory could go into an infinite loop.
+            <!-- Fixed in trunk: r47776 -->
+            <!-- Fixed in trunk-1.8: r47778 -->
+            (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8360">Bug
+            8360</ulink>)
+          </para>
+          <para>Versions affected: 1.8.0 to 1.8.5.</para>
+          <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2476">CVE-2013-2476</ulink>
+          </para>
+        </listitem>
+
+        <listitem>
+          <para>
+            <ulink url="http://www.wireshark.org/security/wnpa-sec-2013-12.html">wnpa-sec-2013-12</ulink>
+          </para>
+          <para>
+	    The CSN.1 dissector could crash. Discovered by Laurent Butti.
+            <!-- Fixed in trunk: r44899 -->
+            <!-- Fixed in trunk-1.8: 47888 -->
+            (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8383">Bug
+            8383</ulink>)
+          </para>
+          <para>Versions affected: 1.8.0 to 1.8.5.</para>
+          <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2477">CVE-2013-2477</ulink>
+          </para>
+        </listitem>
+
+        <listitem>
+          <para>
+            <ulink url="http://www.wireshark.org/security/wnpa-sec-2013-13.html">wnpa-sec-2013-13</ulink>
+          </para>
+          <para>
+	    The MS-MMS dissector could crash. Discovered by Laurent Butti.
+            <!-- Fixed in trunk: r47979 -->
+            <!-- Fixed in trunk-1.8: r47981  -->
+            <!-- Fixed in trunk-1.6: r47982 -->
+            (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8382">Bug
+            8382</ulink>)
+          </para>
+          <para>Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.</para>
+          <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2478">CVE-2013-2478</ulink>
+          </para>
+        </listitem>
+
+        <listitem>
+          <para>
+            <ulink url="http://www.wireshark.org/security/wnpa-sec-2013-14.html">wnpa-sec-2013-14</ulink>
+          </para>
+          <para>
+	    The MPLS Echo dissector could go into an infinite loop. Discovered by Laurent Butti.
+            <!-- Fixed in trunk: r46391 -->
+            <!-- Fixed in trunk-1.8: r48074 -->
+            (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8039">Bug
+            8039</ulink>)
+          </para>
+          <para>Versions affected: 1.8.0 to 1.8.5.</para>
+          <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2479">CVE-2013-2479</ulink>
+          </para>
+        </listitem>
+
+        <listitem>
+          <para>
+            <ulink url="http://www.wireshark.org/security/wnpa-sec-2013-15.html">wnpa-sec-2013-15</ulink>
+          </para>
+          <para>
+	    The RTPS and RTPS2 dissectors could crash. Discovered by Alyssa Milburn.
+            <!-- Fixed in trunk: r47658 -->
+            <!-- Fixed in trunk-1.8: r48076  -->
+            <!-- Fixed in trunk-1.6: r48077 -->
+            (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8332">Bug
+            8332</ulink>)
+          </para>
+          <para>Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.</para>
+          <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2480">CVE-2013-2480</ulink>
+          </para>
+        </listitem>
+
+        <listitem>
+          <para>
+            <ulink url="http://www.wireshark.org/security/wnpa-sec-2013-16.html">wnpa-sec-2013-16</ulink>
+          </para>
+          <para>
+	    The Mount dissector could crash. Discovered by Alyssa Milburn.
+            <!-- Fixed in trunk: r47672 -->
+            <!-- Fixed in trunk-1.8: r48078 -->
+            <!-- Fixed in trunk-1.6: r48079 -->
+            (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8335">Bug
+            8335</ulink>)
+          </para>
+          <para>Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.</para>
+          <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2481">CVE-2013-2481</ulink>
+          </para>
+        </listitem>
+
+        <listitem>
+          <para>
+            <ulink url="http://www.wireshark.org/security/wnpa-sec-2013-17.html">wnpa-sec-2013-17</ulink>
+          </para>
+          <para>
+	    The AMPQ dissector could go into an infinite loop. Discovered by Moshe Kaplan.
+            <!-- Fixed in trunk: r47681 -->
+            <!-- Fixed in trunk-1.8: r48090 -->
+            <!-- Fixed in trunk-1.6: r48091 -->
+            (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8337">Bug
+            8337</ulink>)
+          </para>
+          <para>Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.</para>
+          <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2482">CVE-2013-2482</ulink>
+          </para>
+        </listitem>
+
+        <listitem>
+          <para>
+            <ulink url="http://www.wireshark.org/security/wnpa-sec-2013-18.html">wnpa-sec-2013-18</ulink>
+          </para>
+          <para>
+	    The ACN dissector could attempt to divide by zero. Discovered by Alyssa Milburn.
+            <!-- Fixed in trunk: r47692 -->
+            <!-- Fixed in trunk-1.8: r48092 -->
+            <!-- Fixed in trunk-1.6: r48094 -->
+            (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8340">Bug
+            8340</ulink>)
+          </para>
+          <para>Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.</para>
+          <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2483">CVE-2013-2483</ulink>
+          </para>
+        </listitem>
+
+        <listitem>
+          <para>
+            <ulink url="http://www.wireshark.org/security/wnpa-sec-2013-19.html">wnpa-sec-2013-19</ulink>
+          </para>
+          <para>
+	    The CIMD dissector could crash. Discovered by Moshe Kaplan.
+            <!-- Fixed in trunk: r47708 -->
+            <!-- Fixed in trunk-1.8: r48098  -->
+            <!-- Fixed in trunk-1.6: r48099 -->
+            (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8346">Bug
+            8346</ulink>)
+          </para>
+          <para>Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.</para>
+          <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2484">CVE-2013-2484</ulink>
+          </para>
+        </listitem>
+
+        <listitem>
+          <para>
+            <ulink url="http://www.wireshark.org/security/wnpa-sec-2013-20.html">wnpa-sec-2013-20</ulink>
+          </para>
+          <para>
+	    The FCSP dissector could go into an infinite loop. Discovered by Moshe Kaplan.
+            <!-- Fixed in trunk: r47775 -->
+            <!-- Fixed in trunk-1.8: r48101 -->
+            <!-- Fixed in trunk-1.6: r48102 -->
+            (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8359">Bug
+            8359</ulink>)
+          </para>
+          <para>Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.</para>
+	  <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2485">CVE-2013-2485</ulink>
+          </para>
+        </listitem>
+
+        <listitem>
+          <para>
+            <ulink url="http://www.wireshark.org/security/wnpa-sec-2013-21.html">wnpa-sec-2013-21</ulink>
+          </para>
+          <para>
+	    The RELOAD dissector could go into an infinite loop. Discovered by Even Jensen.
+            <!-- Fixed in trunk: r47805, r47808 -->
+            <!-- Fixed in trunk-1.8: r48107  -->
+            (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8364">Bug
+            8364</ulink>)
+          </para>
+          <para>Versions affected: 1.8.0 to 1.8.5.</para>
+	  <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2486">CVE-2013-2486</ulink>
+          </para>
+	  <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2487">CVE-2013-2487</ulink>
+          </para>
+        </listitem>
+
+        <listitem>
+          <para>
+            <ulink url="http://www.wireshark.org/security/wnpa-sec-2013-22.html">wnpa-sec-2013-22</ulink>
+          </para>
+          <para>
+	    The DTLS dissector could crash. Discovered by Laurent Butti.
+            <!-- Fixed in trunk: r48010, r48011 -->
+            <!-- Fixed in trunk-1.8: r48112 -->
+            <!-- Fixed in trunk-1.6: r48113 -->
+            (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8380">Bug
+            8380</ulink>)
+          </para>
+          <para>Versions affected: 1.8.0 to 1.8.5, 1.6.0 to 1.6.13.</para>
+	  <para>
+            <ulink url="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2488">CVE-2013-2488</ulink>
+          </para>
+        </listitem>
+
+      </itemizedlist>
+
+    </para>
+
+    <para>
+
+      The following bugs have been fixed:
+
+      <itemizedlist>
+
+<!-- Sort by bug # -->
+<!--
+        <listitem><para>
+	  Wireshark will strip the paint off your car, then apply a hideous
+	  flame job to the hood and fenders using gray, red, and black primer.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=0000">Bug
+          0000</ulink>)
+        </para></listitem>
+-->
+
+        <listitem><para>
+          Lua pinfo.cols.protocol not holding value in postdissector.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=6020">Bug
+          6020</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          data combined via ssl_desegment_app_data not visible via &quot;Follow SSL Stream&quot; only decrypted ssl data tabs.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=6434">Bug
+          6434</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          HTTP application/json-rpc should be decoded/shown as application/json.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=7939">Bug
+          7939</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          Maximum value of 802.11-2012 Duration field should be 32767.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8056">Bug
+          8056</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          Voice RTP player crash if player is closed while playing.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8065">Bug
+          8065</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          Display Filter Macros crash.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8073">Bug
+          8073</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          RRC RadioBearerSetup message decoding issue.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8290">Bug
+          8290</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          R-click filters add ! in front of field when choosing &quot;apply as filter&gt;selected&quot;.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8297">Bug
+          8297</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          BACnet - Loop Object - Setpoint-Reference property does not decode correctly.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8306">Bug
+          8306</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          WMM TSPEC Element Parsing is not done is wrong due to a wrong switch case number.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8320">Bug
+          8320</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          Incorrect RTP statistics (Lost Packets indication not ok).
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8321">Bug
+          8321</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          Registering ieee802154 dissector for IEEE802.15.4 frames inside Linux SLL frames.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8325">Bug
+          8325</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          Version Field is skipped while parsing WMM_TSPEC causing wrong dissecting (1 byte offset missing) of all fields in the TSPEC.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8330">Bug
+          8330</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          [BACnet] UCS-2 strings longer than 127 characters do not decode correctly.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8331">Bug
+          8331</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          Malformed IEEE80211 frame triggers DISSECTOR_ASSERT.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8345">Bug
+          8345</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          Decoding of GSM MAP SMS Diagnostics.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8378">Bug
+          8378</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          Incorrect packet length displayed for Flight Message Transfer Protocol (FMTP).
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8407">Bug
+          8407</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          Netflow dissector flowDurationMicroseconds nanosecond conversion wrong.
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8410">Bug
+          8410</ulink>)
+        </para></listitem>
+
+        <listitem><para>
+          BE (3) AC is wrongly named as &quot;Video&quot; in (qos_acs).
+          (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=8432">Bug
+          8432</ulink>)
+        </para></listitem>
+
+      </itemizedlist>
+
+    </para>
+
+    </section>
+
+    <section id="NewFeatures"><title>New and Updated Features</title>
+    <para>
+
+There are no new features in this release.
+
+    </para>
+    </section>
+
+    <section id="NewProtocols"><title>New Protocol Support</title>
+    <para>
+
+There are no new protocols in this release.
+
+    </para>
+    </section>
+
+    <section id="UpdatedProtocols"><title>Updated Protocol Support</title> <para>
+
+<!-- Sort alphabetically -->
+
+ACN,
+AMQP,
+ASN.1 PER,
+BACnet,
+CIMD,
+CSN.1,
+DOCSIS TLVs,
+DTLS,
+FCSP,
+FMP/NOTIFY,
+FMTP,
+GSM MAP SMS,
+HART/IP,
+IEEE 802.11,
+IEEE 802.15.4,
+JSON,
+Linux SLL,
+LTE RRC,
+Mount,
+MPLS Echo,
+Netflow,
+RELOAD,
+RSL,
+RTP,
+RTPS,
+RTPS2,
+SABP,
+SIP,
+SSL,
+TCP
+
+    </para>
+    </section>
+
+    <section id="NewCapture"><title>New and Updated Capture File Support</title>
+    <para>
+
+.
+
+    </para>
+    </section>
+
+  </section>
+
+  <section id="GettingWireshark"><title>Getting Wireshark</title>
+    <para>
+      Wireshark source code and installation packages are available from
+      <ulink url="http://www.wireshark.org/download.html">http://www.wireshark.org/download.html</ulink>.
+    </para>
+
+    <section id="VendorPackages"><title>Vendor-supplied Packages</title>
+      <para>
+        Most Linux and Unix vendors supply their own Wireshark packages.
+        You can usually install or upgrade Wireshark using the package management
+        system specific to that platform.  A list of third-party packages
+        can be found on the
+        <ulink url="http://www.wireshark.org/download.html#thirdparty">download page</ulink>
+        on the Wireshark web site.
+      </para>
+    </section>
+
+  </section>
+
+  <!-- XXX needs to be written
+  <section id="RemovingWireshark"><title>Removing Wireshark</title>
+    <para>
+    </para>
+  </section>
+  -->
+
+  <section id="FileLocations"><title>File Locations</title>
+    <para>
+      Wireshark and TShark look in several different locations for
+      preference files, plugins, SNMP MIBS, and RADIUS dictionaries.
+      These locations vary from platform to platform.  You can use
+      About→Folders to find the default locations on your system.
+    </para>
+  </section>
+
+  <section id="KnownProblems"><title>Known Problems</title>
+
+    <para>
+      Dumpcap might not quit if Wireshark or TShark crashes.
+      (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=1419">Bug
+      1419</ulink>)
+    </para>
+
+    <para>
+      The BER dissector might infinitely loop.
+      (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=1516">Bug
+      1516</ulink>)
+    </para>
+
+    <para>
+      Capture filters aren't applied when capturing from named pipes.
+      (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=1814">Bug
+      1814</ulink>)
+    </para>
+
+    <para>
+      Filtering tshark captures with display filters (-R) no longer works.
+      (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=2234">Bug
+      2234</ulink>)
+    </para>
+
+    <para>
+      The 64-bit Windows installer does not support Kerberos decryption.
+      (<ulink url="https://wiki.wireshark.org/Development/Win64">Win64
+      development page</ulink>)
+    </para>
+
+    <para>
+      Application crash when changing real-time option.
+      (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=4035">Bug
+      4035</ulink>)
+    </para>
+
+    <para>
+      Hex pane display issue after startup.
+      (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=4056">Bug
+      4056</ulink>)
+    </para>
+
+    <para>
+      Packet list rows are oversized.
+      (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=4357">Bug
+      4357</ulink>)
+    </para>
+
+    <para>
+      Summary pane selected frame highlighting not maintained.
+      (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=4445">Bug
+      4445</ulink>)
+    </para>
+
+    <para>
+      Wireshark and TShark will display incorrect delta times in some cases.
+      (<ulink url="https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=4985">Bug
+      4985</ulink>)
+    </para>
+
+  </section>
+
+  <section id="GettingHelp"><title>Getting Help</title>
+    <para>
+    Community support is available on
+    <ulink url="http://ask.wireshark.org/">Wireshark's Q&amp;A site</ulink>
+    and on the wireshark-users mailing list.
+    Subscription information and archives for all of Wireshark's mailing
+    lists can be found on <ulink url="http://www.wireshark.org/lists/">the
+    web site</ulink>.
+    </para>
+    <para>
+    Official Wireshark training and certification are available from
+    <ulink url="http://www.wiresharktraining.com/">Wireshark University</ulink>.
+    </para>
+  </section>
+
+  <section id="FAQ"><title>Frequently Asked Questions</title>
+    <para>
+    A complete FAQ is available on the
+    <ulink url="http://www.wireshark.org/faq.html">Wireshark web site</ulink>.
+    </para>
+  </section>
+
+</article>

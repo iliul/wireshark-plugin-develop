@@ -1,0 +1,17 @@
+/usr/bin/capinfos
+/usr/bin/dftest  
+/usr/bin/dumpcap
+/usr/bin/editcap
+/usr/bin/mergecap
+/usr/bin/randpkt
+/usr/bin/rawshark
+/usr/bin/text2pcap
+/usr/lib/wireshark/libwireshark.so.2
+/usr/lib/wireshark/libwireshark.so.2.0.6
+/usr/lib/wireshark/libwiretap.so.2
+/usr/lib/wireshark/libwiretap.so.2.1.6
+/usr/lib/wireshark/libwsutil.so.2
+/usr/lib/wireshark/libwsutil.so.2.0.0
+/usr/lib/wireshark/plugins/*
+/usr/share/wireshark/*
+/etc/wireshark/init.lua
